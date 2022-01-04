@@ -50,7 +50,7 @@ async def _pdf(bot, callback_query):
         await bot.send_document(
             update.chat.id,
             file_dir + '.zip',
-            caption=file_dir,
+            caption=file_dir [PDF][@Manga_Complex],
             progress=progress_for_pyrogram,
             progress_args=(
                 'Uploading...',
