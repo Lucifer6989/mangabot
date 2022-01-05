@@ -33,8 +33,3 @@ for more help, [read this](https://github.com/manga-py/manga-py#downloading-mang
 ## Credits, and Thanks to:
 
 * [Dan Tès](https://t.me/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
-* [Jacob Ilias Komissar (@jirassimok)](https://github.com/jirassimok) for his [dir2pdf Tool](https://github.com/jirassimok/dir2pdf)
-* [Sergey Zharkov (@1271)](https://github.com/1271) for his [Manga-py Tool](https://github.com/manga-py/manga-py)
-
-#### LICENSE
-- GPLv3
