@@ -41,7 +41,7 @@ async def _pdf(bot, callback_query):
                 archive.extractall(path=f'./Manga/{file_dir}/{f.stem}')
                 os.remove(f'./Manga/{file_dir}/{f.stem}/info.txt')
                 os.remove(f'./Manga/{file_dir}/{f.stem}.zip')
-                cmd = f'dir2pdf --subdirs vol_(.*) Manga/{file_dir}/' + 'vol_{}.pdf' + f' Manga/{file_dir}/'
+                cmd = f'dir2pdf --subdirs chap_(.*) Manga/{file_dir}/' + 'chap - {} [PDF][@Manga_Complex].pdf' + f' Manga/{file_dir}/'
                 await run_cmd(cmd)
                 shutil.rmtree(f'./Manga/{file_dir}/{f.stem}')
         shutil.make_archive(file_dir, 'zip', file)
@@ -50,7 +50,7 @@ async def _pdf(bot, callback_query):
         await bot.send_document(
             update.chat.id,
             file_dir + '.zip',
-            caption=file_dir,
+            caption=file_dir [PDF][@Manga_Complex],
             progress=progress_for_pyrogram,
             progress_args=(
                 'Uploading...',
